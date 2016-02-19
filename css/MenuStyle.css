@@ -1,0 +1,11 @@
+body{
+ background-image: url("../images/backMenu.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:100% 115%;
+}
+
+#comida{position:relative; top:50px; left:340px; hight:400px; width:400px;}
+descripcion{position:relative; top:80px;}
+nombreComida {position:relative; top:-170px; left:-240px; font-size:38pt; font-weight: bold;}
+precio{position:relative; top:-180px; left:590px; font-size:28pt;}
