@@ -5,7 +5,15 @@ background-attachment: fixed;
 background-size:100% 115%;
 }
 
-#comida{position:relative; top:50px; left:340px; hight:400px; width:400px;}
-descripcion{position:relative; top:80px;}
-nombreComida {position:relative; top:-170px; left:-240px; font-size:38pt; font-weight: bold;}
-precio{position:relative; top:-180px; left:590px; font-size:28pt;}
+#comida{position:relative; top:120px; left:280px; hight:400px; width:400px;}
+#canasta{position:relative; top:-250px; left:1140px; hight:50px; width:50px;}
+#canasta:hover{cursor:hand;}
+descripcion{position:relative; top:150px; left:-60px;}
+#nombreComida {position:relative; top:-270px; left:720px; font-size:38pt; font-weight: bold;}
+#dia {position:relative; top:-290px; left:590px; font-size:30pt; font-weight: bold;}
+precio{position:relative; top:-320px; left:720px; font-size:28pt;}
+#pedido{position:relative; top:-280px; left:650px; width:72px;}
+#agregarBoton{position:relative; top:-280px; left:680px; width:72px;}
+#agregarBoton:hover{cursor:hand;}
+#cerrarSesion{position:relative; top:-605px; left:1020px;}
+#CerrarSesion:hover{cursor:hand;}
