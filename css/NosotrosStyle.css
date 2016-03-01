@@ -1,0 +1,13 @@
+body{
+background-image: url("../images/backMenu2.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:100% 115%;
+}
+
+#muestra{position:relative; top:150px; left:600px; width:400px; height:320px;}
+#logo{position:relative; top:-80px; left:550px; width:200px; height:150px;}
+#texto1{font-size:15px; font-weight:bold; position:relative;  top:-80px; left:15px; width:600px;}
+#texto2{font-size:15px; font-weight:bold; position:relative;  top:-50px; left:700px; width:600px;}
+#cocinera{position:relative; top:-330px; left:30px; width:500px; height:400px;}
+#cocinera:hover{cursor:hand;}
