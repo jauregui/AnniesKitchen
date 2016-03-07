@@ -1,5 +1,5 @@
 body{
- background-image: url("../images/backMenu.jpg");
+ background-image: url("../images/backMenu3.png");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size:100% 115%;
@@ -17,3 +17,4 @@ precio{position:relative; top:-380px; left:720px; font-size:28pt;}
 #agregarBoton:hover{cursor:hand;}
 #cerrarSesion{position:relative; top:-610px; left:1020px;}
 #CerrarSesion:hover{cursor:hand;}
+#modal{position: relative; top: 30px; left:610px;}
