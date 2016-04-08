@@ -12,7 +12,7 @@ CREATE TABLE Menu(
 	idM  INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
 	day INT(1) NOT NULL,
 	week INT(1) NOT NULL,
-	name VARCHAR(20) NOT NULL,
+	dish VARCHAR(20) NOT NULL,
 	price INT(5) NOT NULL
 );
 
@@ -23,10 +23,4 @@ CREATE TABLE Order(
 	quantity INT(2) NOT NULL,
 	total INT(5) NOT NULL
 );
-
-
-
-INSERT INTO Users(firstName, lastName, username, pass, mail)
-VALUES  ('Name', 'LastName', 'testUser', 'testPassword', 'testmail@hotmail.com')
-
 
