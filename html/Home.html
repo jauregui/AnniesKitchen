@@ -1,85 +1,95 @@
 <html>
-<link rel="stylesheet" type="text/css" href="../css/MenuStyle.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/HomeStyle.css">
 <link href="../images/comida.png" rel="shortcut icon">
-<script src="../js/jquery.js" type="text/javascript"> </script>
+<!--<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">-->
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <head>
 <title>AnniesKitchen</title>
 </head>
-<center>
-<p id="instrucciones">Escoge la semana para visualizar el menu:</p>
-<br>
-<select id="semana" onchange="cambioSemana()">
-<option selected value="semana1">Semana 1 (Actual)
-<option value="semana2">Semana 2
-<option value="semana3">Semana 3
-</select>
-<br><br>
-<TABLE id="tablaMenu">
-<tr>
-<td>Martes</td>
-<td>Miercoles</td>
-<td>Jueves</td>
-<td>Viernes</td>
-</tr>
-<tr>
-<td><img id="platillo1" src="../images/platilloMuestra.png"></img></td>
-<td><img id="platillo2" src="../images/tacos.png"></img></td>
-<td><img id="platillo3" src="../images/burguer.png"></img></td>
-<td><img id="platillo4" src="../images/menudo.png"></img></td>
-</tr>
-<tr>
-<td id="mar">S1: Platillo 1</td>
-<td id="mier">S1: Platillo 2</td>
-<td id="jue" >S1: Platillo 3</td>
-<td id="vier" >S1: Platillo 4</td>
-</tr>
-</TABLE>
-</center>
+<img  id="canasta" src="../images/bolsaComida.png" title="Pedido"></img>
 
-<script>
-function cambioSemana() {
-    var x = document.getElementById("semana").value;
-    if (x=='semana1'){
-    document.getElementById("mar").innerHTML = "S1: Platillo 1";
-    document.getElementById("mier").innerHTML = "S1: Platillo 2";
-    document.getElementById("jue").innerHTML = "S1: Platillo 3";
-    document.getElementById("vier").innerHTML = "S1: Platillo 4";
-    document.getElementById("platillo1").src="../images/platilloMuestra.png";
-    document.getElementById("platillo2").src="../images/tacos.png";
-    document.getElementById("platillo3").src="../images/burguer.png";
-    document.getElementById("platillo4").src="../images/menudo.png";
-  } else if (x=='semana2'){
-    document.getElementById("mar").innerHTML = "S2: Platillo 1";
-    document.getElementById("mier").innerHTML = "S2: Platillo 2";
-    document.getElementById("jue").innerHTML = "S2: Platillo 3";
-    document.getElementById("vier").innerHTML = "S2: Platillo 4";
-    document.getElementById("platillo1").src="../images/pollo.png";
-    document.getElementById("platillo2").src="../images/quesadillas.png";
-    document.getElementById("platillo3").src="../images/camaron.png";
-    document.getElementById("platillo4").src="../images/verduras.png";
-  } else if (x=='semana3'){
-    document.getElementById("mar").innerHTML = "S3: Platillo 1";
-    document.getElementById("mier").innerHTML = "S3: Platillo 2";
-    document.getElementById("jue").innerHTML = "S3: Platillo 3";
-    document.getElementById("vier").innerHTML = "S3: Platillo 4";
-    document.getElementById("platillo1").src="../images/hotdog.png";
-    document.getElementById("platillo2").src="../images/tacos.png";
-    document.getElementById("platillo3").src="../images/quesadillas.png";
-    document.getElementById("platillo4").src="../images/burguer.png";
-  }
-}
-</script>
+<!--<img  id="comida" src="../images/burguer.png"></img>
+<p id="descripcion">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.</p>
+<p id="dia">LUNES</p>
+<p id="nombreComida">Hamburguesa Clásica</p>
+<precio>$54</precio>
+<input type="number" placeholder="Cantidad" name="cantidad" id="pedido"> 
+<input type="submit" class="button" value="Agregar" id="agregarBoton"> -->
+<input type="submit" class="button" value="Cerrar Sesion" id="cerrarSesion">
 
 
 
 
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-<center id="modal">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../images/tacos.png" alt="..." style="height:400px;  position:relative; left:100px;">
+      <div class="carousel-caption">
+        <center>
+        <h1>MARTES</h1>
+        <h2>Tacos de guisos</h2>
+        <h3>$40</h3>
+    <p style="width:350px;">Los tacos de guisos pueden ser servidos en harina o maiz, contamos con guisos como: deshebrada, chicharron, picadillo</p>
+      </center>
+      </div>
+    </div>
+    <!--Separador -->
+    <div class="item">
+      <img src="../images/burguer.png" alt="..." style="height:400px; position:relative; left:100px;">
+      <div class="carousel-caption">
+       <center>
+        <h1 >Miercoles</h1>
+        <h2>Hamburguersa Clasica</h2>
+        <h3>$59</h3>
+    <p style="width:350px;">La hamburguesa clasica incluye carne, dos quesos, jamon, tomate, lechuga</p>
+      </center>
+        ...
+      </div>
+    </div>
+    ...
+    <!--Separador -->
+    <div class="item">
+      <img src="../images/platilloMuestra.png" alt="..." style="height:400px; position:relative; left:100px;">
+      <div class="carousel-caption">
+       <center>
+        <h1 >Jueves</h1>
+        <h2>Mole Clasico</h2>
+        <h3>$40</h3>
+    <p style="width:350px;">La hamburguesa clasica incluye carne, dos quesos, jamon, tomate, lechuga</p>
+      </center>
+      </div>
+    </div>
+<!--Separador -->
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
 <!-- Trigger the modal with a button -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="modal">Haz tu pedido</button>
 
@@ -204,9 +214,6 @@ function cambioSemana() {
 
   </div>
 </div>
-</center>
-
-
 
 
 
@@ -218,7 +225,7 @@ function cambioSemana() {
       <a class="navbar-brand" href="#">Annie's</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="Home.html">Inicio</a></li>
+      <li class="active"><a href="#">Inicio</a></li>
       <li><a href="Nosotros.html">Nosotros</a></li>
       <li><a href="Menu.html">Menu</a></li> 
       <li><a href="#">Como funciona?</a></li> 

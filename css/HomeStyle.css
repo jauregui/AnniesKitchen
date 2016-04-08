@@ -1,0 +1,20 @@
+body{
+ background-image: url("../images/backMenu3.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:100% 115%;
+}
+
+#comida{position:relative; top:120px; left:280px; hight:400px; width:400px;}
+#canasta{position:relative; top:-110px; left:1140px; hight:50px; width:50px;}
+#canasta:hover{cursor:hand;}
+#descripcion{position:relative; top:120px; left:350px; width:700px;}
+#nombreComida {width:300px; position:relative; top:-350px; left:720px; font-size:38pt; font-weight: bold;}
+#dia {position:relative; top:-350px; left:590px; font-size:30pt; font-weight: bold;}
+precio{position:relative; top:-380px; left:720px; font-size:28pt;}
+#pedido{position:relative; top:-340px; left:650px; width:75px;}
+#agregarBoton{position:relative; top:-340px; left:680px; width:72px;}
+#agregarBoton:hover{cursor:hand;}
+#cerrarSesion{position:relative; top:-610px; left:1020px;}
+#CerrarSesion:hover{cursor:hand;}
+#modal{position: relative; top: 30px; left:610px;}
