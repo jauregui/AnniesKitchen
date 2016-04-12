@@ -14,9 +14,9 @@
 <p id="instrucciones">Escoge la semana para visualizar el menu:</p>
 <br>
 <select id="semana" onchange="cambioSemana()">
-<option selected value="semana1">Semana 1 (Actual)
-<option value="semana2">Semana 2
-<option value="semana3">Semana 3
+<option selected value="1">Semana 1 (Actual)
+<option value="2">Semana 2
+<option value="3">Semana 3
 </select>
 <br><br>
 <TABLE id="tablaMenu">
@@ -27,22 +27,82 @@
 <td>Viernes</td>
 </tr>
 <tr>
-<td><img id="platillo1" src="../images/platilloMuestra.png"></img></td>
-<td><img id="platillo2" src="../images/tacos.png"></img></td>
-<td><img id="platillo3" src="../images/burguer.png"></img></td>
-<td><img id="platillo4" src="../images/menudo.png"></img></td>
+<td><img id="platilloMartes" src="../images/platilloMuestra.png"></img></td>
+<td><img id="platilloMiercoles" src="../images/tacos.png"></img></td>
+<td><img id="platilloJueves" src="../images/burguer.png"></img></td>
+<td><img id="platilloViernes" src="../images/menudo.png"></img></td>
 </tr>
 <tr>
-<td id="mar">S1: Platillo 1</td>
-<td id="mier">S1: Platillo 2</td>
-<td id="jue" >S1: Platillo 3</td>
-<td id="vier" >S1: Platillo 4</td>
+<td id="Martes">S1: Platillo 1</td>
+<td id="Miercoles">S1: Platillo 2</td>
+<td id="Jueves" >S1: Platillo 3</td>
+<td id="Viernes" >S1: Platillo 4</td>
 </tr>
 </TABLE>
 </center>
 
 <script>
-function cambioSemana() {
+$( document ).on('ready', function() {
+//function cambioSemana() {
+  $("#semana").on("change", function(){
+
+
+              for (var i=0; i<2; i++){
+                var jsonObject = {
+                    "numero": $("#semana").val(),
+                    "diaa": i
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "../php/getMenu.php",
+                    dataType: "json",
+                    data: jsonObject,
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    success: function(jsonData) {
+                        //alert("Si hay Menu");
+                        var x = document.getElementById("semana").value;
+                        var k = jsonData.Semana;
+                        if (x==k){
+    //document.getElementById("Martes").innerHTML = jsonData.nombre;
+    document.getElementById(jsonData.dia).innerHTML = jsonData.nombre+"<br>"+jsonData.descripcion+"<br>"+"Precio: $"+jsonData.precio;
+    //document.getElementById("Miercoles").innerHTML = jsonData.nombre;
+    //document.getElementById("jue").innerHTML = "S1: Platillo 3";
+    //document.getElementById("vier").innerHTML = "S1: Platillo 4";
+    document.getElementById("platillo"+jsonData.dia).src="../images/"+jsonData.imagen;
+    //document.getElementById("platillo2").src="../images/tacos.png";
+    //document.getElementById("platillo3").src="../images/burguer.png";
+    //document.getElementById("platillo4").src="../images/menudo.png";
+  } else if (x=='semana2'){
+    document.getElementById("mar").innerHTML = "S2: Platillo 1";
+    document.getElementById("mier").innerHTML = "S2: Platillo 2";
+    document.getElementById("jue").innerHTML = "S2: Platillo 3";
+    document.getElementById("vier").innerHTML = "S2: Platillo 4";
+    document.getElementById("platillo1").src="../images/pollo.png";
+    document.getElementById("platillo2").src="../images/quesadillas.png";
+    document.getElementById("platillo3").src="../images/camaron.png";
+    document.getElementById("platillo4").src="../images/verduras.png";
+  } else if (x=='semana3'){
+    document.getElementById("mar").innerHTML = "S3: Platillo 1";
+    document.getElementById("mier").innerHTML = "S3: Platillo 2";
+    document.getElementById("jue").innerHTML = "S3: Platillo 3";
+    document.getElementById("vier").innerHTML = "S3: Platillo 4";
+    document.getElementById("platillo1").src="../images/hotdog.png";
+    document.getElementById("platillo2").src="../images/tacos.png";
+    document.getElementById("platillo3").src="../images/quesadillas.png";
+    document.getElementById("platillo4").src="../images/burguer.png";
+  }
+                        //window.location.replace("../Html/Menu.html");   
+                       
+                    },
+                    error: function(errorMsg){
+                        alert("No hay Menu");
+                    }
+                }); 
+                } //cierra for
+                //window.location.replace("../Html/home.php"); 
+
+/*
     var x = document.getElementById("semana").value;
     if (x=='semana1'){
     document.getElementById("mar").innerHTML = "S1: Platillo 1";
@@ -71,8 +131,9 @@ function cambioSemana() {
     document.getElementById("platillo2").src="../images/tacos.png";
     document.getElementById("platillo3").src="../images/quesadillas.png";
     document.getElementById("platillo4").src="../images/burguer.png";
-  }
-}
+  } */
+}); //Cierra funcion cambioSemana
+}); //Cierra document ready
 </script>
 
 

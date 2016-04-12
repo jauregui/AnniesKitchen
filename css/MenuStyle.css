@@ -8,7 +8,7 @@ background-size:100% 115%;
 #modal{position: relative; top: 10px;}
 #tablaMenu {border:4px solid black; text-align: center; width:1200px;}
 td{}
-#platillo1{width:300px;}
-#platillo2{width:300px;}
-#platillo3{width:300px;}
-#platillo4{width:300px;}
+#platilloMartes{width:300px;}
+#platilloMiercoles{width:300px;}
+#platilloJueves{width:300px;}
+#platilloViernes{width:300px;}

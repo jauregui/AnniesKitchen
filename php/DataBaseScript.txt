@@ -1,0 +1,11 @@
+CREATE TABLE menu(
+	semanaId INT AUTO_INCREMENT PRIMARY KEY,
+	numeroSemana INT,
+	diaSemana TEXT,
+	nombreComida VARCHAR(30) NOT NULL,
+	descripcionComida TEXT,
+	precioComida TEXT,
+	imagenComida TEXT
+);
+
+INSERT INTO menu (numeroSemana, diaSemana, nombreComida, descripcionComida, precioComida, imagenComida) VALUES ('1', 'Miercoles', 'Quesadillas', 'La Hambuguesa incluye jamon, queso, carne de res, aguacate, tomate, lechuga y esta preparada al carbon', '30', 'quesadillas.png');
