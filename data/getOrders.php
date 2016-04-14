@@ -10,7 +10,7 @@
 	// Check connection
 	if ($conn->connect_error) 
 	{
-	    header('HTTP/1.1 500 Bad connection to Database');
+	    header('HTTP/1.1 500 Mala conexion');
 	    die(json_encode(array('message' => 'ERROR', 'code' => 1337)));
 	}
 	else
@@ -29,7 +29,7 @@
 		}
 		else
 		{
-	    	header('HTTP/1.1 406 No comments are available at the moment.');
+	    	header('HTTP/1.1 406 No hay pedidos disponibles.');
 	        die(json_encode(array('message' => 'ERROR', 'code' => 1337)));
 		}
 	} 
