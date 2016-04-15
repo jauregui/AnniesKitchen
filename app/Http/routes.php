@@ -15,3 +15,23 @@ Route::get('/', function () {
     return view('Home');
 });
 
+
+Route::get('/nosotros', function () {
+    return view('Nosotros');
+});
+
+
+Route::get('/menu', function () {
+    return view('Menu');
+});
+
+
+Route::get('/contact', function () {
+    return view('Contacto');
+});
+
+
+Route::get('/comofunciona', function () {
+    return view('ComoFunciona');
+});
+

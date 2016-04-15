@@ -13,18 +13,5 @@ Ius id vidit volumus mandamus, vide veritus democritum te nec, ei eos debet libr
 <p id="texto2">Sed iusto nihil populo an, ex pro novum homero cotidieque. Te utamur civibus eleifend qui, nam ei brute doming concludaturque, modo aliquam facilisi nec no. Vidisse maiestatis constituam eu his, esse pertinacia intellegam ius cu. Eos ei odio veniam, eu sumo altera adipisci eam, mea audiam prodesset persequeris ea. Ad vitae dictas vituperata sed, eum posse labore postulant id. Te eligendi principes dignissim sit, te vel dicant officiis repudiandae.
 Id vel sensibus honestatis omittantur, vel cu nobis commune patrioque. In accusata definiebas qui, id tale malorum dolorem sed, solum clita phaedrum ne his. Eos mutat ullum forensibus ex, wisi perfecto urbanitas cu eam, no vis dicunt impetus. Assum novum in pri, vix an suavitate moderatius, id has reformidans referrentur. Elit inciderint omittantur duo ut, dicit democritum signiferumque eu est, ad suscipit delectus mandamus duo. An harum equidem maiestatis nec.</p>
 <img id="cocinera" src="../images/cocinera.png"></img>
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Annie's</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="Home.html">Inicio</a></li>
-      <li><a href="Nosotros.html">Nosotros</a></li>
-      <li><a href="Menu.html">Menu</a></li> 
-      <li><a href="#">Como funciona?</a></li> 
-       <li><a href="#">Contacto</a></li> 
-    </ul>
-  </div>
-</nav>
+@include('partials.navegacion')
 </html>

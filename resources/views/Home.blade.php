@@ -1,8 +1,8 @@
 <html>
-<link rel="stylesheet" type="text/css" href="../css/HomeStyle.css">
+<link rel="stylesheet" type="text/css" href="/css/HomeStyle.css">
 <link href="../images/comida.png" rel="shortcut icon">
 <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">-->
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -216,21 +216,8 @@
 </div>
 
 
+@include('partials.navegacion')
 
 
 
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Annie's</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Inicio</a></li>
-      <li><a href="Nosotros.html">Nosotros</a></li>
-      <li><a href="Menu.html">Menu</a></li> 
-      <li><a href="#">Como funciona?</a></li> 
-       <li><a href="#">Contacto</a></li> 
-    </ul>
-  </div>
-</nav>
 </html>

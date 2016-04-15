@@ -273,18 +273,6 @@ $( document ).on('ready', function() {
 
 
 
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Annie's</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="Home.html">Inicio</a></li>
-      <li><a href="Nosotros.html">Nosotros</a></li>
-      <li><a href="Menu.html">Menu</a></li> 
-      <li><a href="#">Como funciona?</a></li> 
-       <li><a href="#">Contacto</a></li> 
-    </ul>
-  </div>
-</nav>
+@include('partials.navegacion')
+
 </html>
