@@ -12,3 +12,16 @@ INSERT INTO menu (numeroSemana, diaSemana, nombreComida, descripcionComida, prec
 
 
 INSERT INTO users (email, password, name) VALUES ('videanabel@hotmail.com', '$2y$10$WiKYj0AYBN6HALVfGmbZy.oh2R2xRTzYjd14qkSyLSnQanTszb2Qm', 'Anabel');
+
+CREATE TABLE Order ( 
+	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	nombre TEXT NOT NULL,
+	apellido TEXT NOT NULL,
+	telefono TEXT NOT NULL,
+	comentario TEXT,
+	qLu INT(2),
+	qMa INT(2),
+	qMi INT(2),
+	qJu INT(2),
+	total INT(5) NOT NULL
+);

@@ -27,7 +27,7 @@ Route::get('/nosotros', function () {
 
 Route::get('/panel', ['middleware' => 'auth', function () {
     
-    return view('Panel');
+    return view('panel.inicio');
 }]);
 
 
@@ -43,3 +43,8 @@ Route::get('/contact', function () {
 Route::get('/comofunciona', function () {
     return view('ComoFunciona');
 });
+Route::post('/guardarPedido', [
+	'uses' => 'HomeController@guardarPedido'
+	]);
+
+
