@@ -30,6 +30,8 @@ Route::get('/panel', ['middleware' => 'auth', function () {
     return view('panel.inicio');
 }]);
 
+Route::get('/historialPedidos', ['middleware' => 'auth', 'uses' => 'HomeController@mostrarPedidos' ]);
+
 
 Route::get('/menu', function () {
     return view('Menu');
@@ -43,8 +45,8 @@ Route::get('/contact', function () {
 Route::get('/comofunciona', function () {
     return view('ComoFunciona');
 });
-Route::post('/guardarPedido', [
-	'uses' => 'HomeController@guardarPedido'
-	]);
+Route::any('/guardarPedido', 'HomeController@guardarPedido');
+
+
 
 

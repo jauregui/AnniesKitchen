@@ -41,5 +41,12 @@ class HomeController extends Controller
             'qJu' =>$request->input('qJu', NULL),
             'total' => $request->input('total')
             ]);
+        return view('ordenExitosa');
+    }
+
+    public function mostrarPedidos()
+    {
+        $ordenes = DB::select('select * from order_ticket');
+        return view ('panel.historialOrdenes', ['ordenes' => $ordenes]);
     }
 }
