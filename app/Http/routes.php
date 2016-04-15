@@ -11,20 +11,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('Home');
-});
 
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/', function () {
+    return view('inicio');
+});
 
 Route::get('/nosotros', function () {
     return view('Nosotros');
 });
 
 
+Route::get('/panel', ['middleware' => 'auth', function () {
+    
+    return view('Panel');
+}]);
+
+
 Route::get('/menu', function () {
     return view('Menu');
 });
-
 
 Route::get('/contact', function () {
     return view('Contacto');
@@ -34,4 +43,3 @@ Route::get('/contact', function () {
 Route::get('/comofunciona', function () {
     return view('ComoFunciona');
 });
-

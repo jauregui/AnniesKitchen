@@ -10,10 +10,5 @@ CREATE TABLE menu(
 
 INSERT INTO menu (numeroSemana, diaSemana, nombreComida, descripcionComida, precioComida, imagenComida) VALUES ('1', 'Miercoles', 'Quesadillas', 'La Hambuguesa incluye jamon, queso, carne de res, aguacate, tomate, lechuga y esta preparada al carbon', '30', 'quesadillas.png');
 
-CREATE TABLE users(
-	userId INT AUTO_INCREMENT PRIMARY KEY,
-	user TEXT,
-	password TEXT
-);
 
-INSERT INTO users (user, password) VALUES ('Annie', 'pass');
+INSERT INTO users (email, password, name) VALUES ('videanabel@hotmail.com', '$2y$10$WiKYj0AYBN6HALVfGmbZy.oh2R2xRTzYjd14qkSyLSnQanTszb2Qm', 'Anabel');

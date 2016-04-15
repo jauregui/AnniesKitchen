@@ -25,6 +25,6 @@
 <img  id="cuadro" src="../images/cuadro.png"></img>
 
 </center>
-
+@include('partials.navegacion')
 </body>
 </html>

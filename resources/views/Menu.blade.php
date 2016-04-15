@@ -1,15 +1,5 @@
-<html>
-<link rel="stylesheet" type="text/css" href="../css/MenuStyle.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-<link href="../images/comida.png" rel="shortcut icon">
-<script src="../js/jquery.js" type="text/javascript"> </script>
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<head>
-<title>AnniesKitchen</title>
-</head>
+@extends('layouts.inicio')
+@section('content')
 <center>
 <p id="instrucciones">Escoge la semana para visualizar el menu:</p>
 <br>
@@ -267,12 +257,4 @@ $( document ).on('ready', function() {
 </div>
 </center>
 
-
-
-
-
-
-
-@include('partials.navegacion')
-
-</html>
+@endsection
