@@ -1,4 +1,4 @@
-body{
+img-logobody{
  background-image: url("../images/backMenu3.png");
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -23,8 +23,23 @@ precio{position:relative; top:-380px; left:720px; font-size:28pt;}
 	display: inline-block;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
+	list-style-type:none;
+	background-color: #4c4c4c;
+    position: fixed;
+    left: 30px;
+    top: 100px;
+    padding: 20px;
+    border: solid;
 }
 
-.contact-img{
+#img-logo{
+	position:fixed;
+	float:right;
+	right: 100px;
+	top:30px;
+	margin-right: 20px;
 	display: inline;
+	padding: 10px;
+	background-color: #9AEEAA;
+	border:solid 2px white;
 }
