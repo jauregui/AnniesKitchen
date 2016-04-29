@@ -6,9 +6,9 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Inicio</a></li>
       <li><a href="/nosotros">Nosotros</a></li>
-      <li><a href="/menu">Menu</a></li> 
-      <li><a href="/comoFunciona">Como funciona?</a></li> 
-      <li><a href="/contacto">Contacto</a></li> 
+      <li><a href="/menu">Men&uacute;</a></li>
+      <li><a href="/comoFunciona">&iquest;C&oacute;mo funciona?</a></li>
+      <li><a href="/contacto">Contacto</a></li>
     </ul>
   </div>
 </nav>

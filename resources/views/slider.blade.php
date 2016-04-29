@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="../css/MenuStyle.css">
 <link href="../images/comida.png" rel="shortcut icon">
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <body>
@@ -24,7 +24,7 @@
       	<h1>MARTES</h1>
       	<h2>Tacos de guisos</h2>
       	<h3>$40</h3>
-    <p>Los tacos de guisos pueden ser servidos en harina o maiz, contamos con guisos como: deshebrada, chicharron, picadillo</p>
+    <p>Los tacos de guisos pueden ser servidos en harina o ma&iacute;z, contamos con guisos como: deshebrada, chicharr&oacute;n, picadillo</p>
       </div>
     </div>
     <div class="item">
@@ -34,9 +34,9 @@
       <div class="carousel-caption">
       	<escrito style="position:relative; top:-50px;">
       	<h1>LUNES</h1>
-      	<h2>Hamburguersa Clasica</h2>
+      	<h2>Hamburguersa Cl&aacute;sica</h2>
       	<h3>$59</h3>
-    <p>La hamburguesa clasica incluye carne, dos quesos, jamon, tomate, lechuga</p>
+    <p>La hamburguesa cl&aacute;sica incluye carne, dos quesos, jam&oacute;n, tomate, lechuga</p>
 </escrito>
         ...
       </div>
