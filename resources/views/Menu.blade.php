@@ -1,7 +1,7 @@
 @extends('layouts.inicio')
 @section('content')
 <center>
-<p id="instrucciones">Escoge la semana para visualizar el menu:</p>
+<p id="instrucciones">Escoge la semana para visualizar el men&uacute;:</p>
 <br>
 <select id="semana" onchange="cambioSemana()">
 <option selected value="1">Semana 1 (Actual)
@@ -12,7 +12,7 @@
 <TABLE id="tablaMenu">
 <tr>
 <td>Martes</td>
-<td>Miercoles</td>
+<td>Mi&eacute;rcoles</td>
 <td>Jueves</td>
 <td>Viernes</td>
 </tr>
@@ -82,15 +82,15 @@ $( document ).on('ready', function() {
     document.getElementById("platillo3").src="../images/quesadillas.png";
     document.getElementById("platillo4").src="../images/burguer.png";
   } */
-                        //window.location.replace("../Html/Menu.html");   
-                       
+                        //window.location.replace("../Html/Menu.html");
+
                     },
                     error: function(errorMsg){
                         alert("No hay Menu");
                     }
-                }); 
+                });
                 } //cierra for
-                //window.location.replace("../Html/home.php"); 
+                //window.location.replace("../Html/home.php");
 
 /*
     var x = document.getElementById("semana").value;
@@ -151,9 +151,9 @@ $( document ).on('ready', function() {
   <form>
 
     <div class="form-group row">
-    <label class="col-sm-3">Dias</label>
+    <label class="col-sm-3">D&iacute;as</label>
     <div class="col-sm-9">
-      
+
       <label class="checkbox-inline">
         <input type="checkbox" id="checkLunes" value="lunes">   Lun
       </label>
@@ -169,7 +169,7 @@ $( document ).on('ready', function() {
       <label class="checkbox-inline">
         <input type="checkbox" id="checkJueves" value="jueves">    Jue
       </label>
-     
+
     </div>
   </div>
 
@@ -177,7 +177,7 @@ $( document ).on('ready', function() {
   <div class="form-group row">
     <label class="col-sm-3">Cant. de Platillos</label>
     <div class="col-sm-9">
-      
+
       <label class="checkbox-inline">
         <input type="text" class="form-control" id="inputLunes" placeholder="#" maxlength="2" size="2">
       </label>
@@ -193,7 +193,7 @@ $( document ).on('ready', function() {
       <label class="checkbox-inline">
         <input type="text" class="form-control" id="inputJueves" placeholder="#" maxlength="2" size="2">
       </label>
-     
+
     </div>
   </div>
 
@@ -246,7 +246,7 @@ $( document ).on('ready', function() {
   </div>
 
 </div>
- 
+
 
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -1,13 +1,14 @@
 @extends('layouts.inicio')
 @section('content')
 <img  id="canasta" src="../images/bolsaComida.png" title="Pedido"></img>
+<link href="../images/comida.png" rel="shortcut icon">
 
 <!--<img  id="comida" src="../images/burguer.png"></img>
 <p id="descripcion">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.</p>
 <p id="dia">LUNES</p>
 <p id="nombreComida">Hamburguesa Clásica</p>
 <precio>$54</precio>
-<input type="number" placeholder="Cantidad" name="cantidad" id="pedido"> 
+<input type="number" placeholder="Cantidad" name="cantidad" id="pedido">
 <input type="submit" class="button" value="Agregar" id="agregarBoton"> -->
 <input type="submit" class="button" value="Cerrar Sesion" id="cerrarSesion">
 
@@ -31,7 +32,7 @@
         <h1>MARTES</h1>
         <h2>Tacos de guisos</h2>
         <h3>$40</h3>
-    <p style="width:350px;">Los tacos de guisos pueden ser servidos en harina o maiz, contamos con guisos como: deshebrada, chicharron, picadillo</p>
+    <p style="width:350px;">Los tacos de guisos pueden ser servidos en harina o ma&iacute;z, contamos con guisos como: deshebrada, chicharr&oacute;n, picadillo</p>
       </center>
       </div>
     </div>
@@ -41,9 +42,9 @@
       <div class="carousel-caption">
        <center>
         <h1 >Miercoles</h1>
-        <h2>Hamburguersa Clasica</h2>
+        <h2>Hamburguersa Cl&aacute;sica</h2>
         <h3>$59</h3>
-    <p style="width:350px;">La hamburguesa clasica incluye carne, dos quesos, jamon, tomate, lechuga</p>
+    <p style="width:350px;">La hamburguesa cl&aacute;sica incluye carne, dos quesos, jam&oacute;n, tomate, lechuga</p>
       </center>
         ...
       </div>
@@ -55,9 +56,9 @@
       <div class="carousel-caption">
        <center>
         <h1 >Jueves</h1>
-        <h2>Mole Clasico</h2>
+        <h2>Mole Cl&aacute;sico</h2>
         <h3>$40</h3>
-    <p style="width:350px;">La hamburguesa clasica incluye carne, dos quesos, jamon, tomate, lechuga</p>
+    <p style="width:350px;">La hamburguesa cl&aacute;sica incluye carne, dos quesos, jam&oacute;n, tomate, lechuga</p>
       </center>
       </div>
     </div>

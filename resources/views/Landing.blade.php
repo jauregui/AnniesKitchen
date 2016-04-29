@@ -1,6 +1,5 @@
 @extends('layouts.land')
 @section('content')
-
 <div class="landing">
 
 	<div class="intro">
