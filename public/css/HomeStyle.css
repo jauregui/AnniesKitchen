@@ -18,3 +18,13 @@ precio{position:relative; top:-380px; left:720px; font-size:28pt;}
 #cerrarSesion{position:relative; top:-610px; left:1020px;}
 #CerrarSesion:hover{cursor:hand;}
 #modal{position: relative; top: 30px; left:610px;}
+
+.contact-info{
+	display: inline-block;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contact-img{
+	display: inline;
+}
