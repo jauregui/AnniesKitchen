@@ -17,7 +17,7 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/', function () {
-    return view('inicio');
+    return view('Landing');
 });
 
 Route::get('/nosotros', function () {
@@ -37,10 +37,13 @@ Route::get('/menu', function () {
     return view('Menu');
 });
 
-Route::get('/contact', function () {
+Route::get('/contacto', function () {
     return view('Contacto');
 });
 
+Route::get('/inicio', function () {
+    return view('inicio');
+});
 
 Route::get('/comofunciona', function () {
     return view('ComoFunciona');
