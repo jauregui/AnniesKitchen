@@ -32,6 +32,11 @@ Route::get('/panel', ['middleware' => 'auth', function () {
 
 Route::get('/historialPedidos', ['middleware' => 'auth', 'uses' => 'HomeController@mostrarPedidos' ]);
 
+Route::get('/productoInsertados', ['middleware' => 'auth', 'uses' => 'HomeController@mostrarProductos' ]);
+
+Route::get('/crearMenu', ['middleware' => 'auth', 'uses' => 'HomeController@crearMenu']);
+
+Route::post('/insertarMenu', ['middleware' => 'auth', 'uses' => 'HomeController@insertarMenu']);
 
 Route::get('/menu', function () {
     return view('Menu');
@@ -49,7 +54,16 @@ Route::get('/comofunciona', function () {
     return view('ComoFunciona');
 });
 
+
+Route::get('/formaProducto', function () {
+    return view('panel.insertarProducto');
+});
+
 Route::any('/guardarPedido', 'HomeController@guardarPedido');
+
+Route::any('/insertarProducto', 'HomeController@insertarProducto');
+
+
 
 
 
