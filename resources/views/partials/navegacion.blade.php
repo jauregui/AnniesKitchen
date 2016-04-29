@@ -7,8 +7,8 @@
       <li class="active"><a href="/">Inicio</a></li>
       <li><a href="/nosotros">Nosotros</a></li>
       <li><a href="/menu">Menu</a></li> 
-      <li><a href="#">Como funciona?</a></li> 
-       <li><a href="#">Contacto</a></li> 
+      <li><a href="/comoFunciona">Como funciona?</a></li> 
+       <li><a href="/contacto">Contacto</a></li> 
     </ul>
   </div>
 </nav>

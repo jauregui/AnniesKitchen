@@ -37,7 +37,7 @@ Route::get('/menu', function () {
     return view('Menu');
 });
 
-Route::get('/contact', function () {
+Route::get('/contacto', function () {
     return view('Contacto');
 });
 
@@ -45,6 +45,7 @@ Route::get('/contact', function () {
 Route::get('/comofunciona', function () {
     return view('ComoFunciona');
 });
+
 Route::any('/guardarPedido', 'HomeController@guardarPedido');
 
 

@@ -96,9 +96,9 @@
       </div>
       <div class="modal-body">
 
-
-
   @include('partials.form')
   </div>
+</div>
+</div>
 </div>
 @endsection

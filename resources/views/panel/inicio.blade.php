@@ -8,7 +8,7 @@
                 <div class="panel-heading">Panel de administraci&oacute;n</div>
 
                 <div class="panel-body">
-                    alskdjf
+                    Bienvenido a tu panel de administraci&oacute;n
                 </div>
             </div>
         </div>
