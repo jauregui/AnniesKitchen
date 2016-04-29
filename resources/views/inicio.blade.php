@@ -1,6 +1,7 @@
 @extends('layouts.inicio')
 @section('content')
 <img  id="canasta" src="../images/bolsaComida.png" title="Pedido"></img>
+<link href="../images/comida.png" rel="shortcut icon">
 
 <!--<img  id="comida" src="../images/burguer.png"></img>
 <p id="descripcion">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.</p>
