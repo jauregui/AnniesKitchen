@@ -54,6 +54,9 @@ Route::get('/comofunciona', function () {
     return view('ComoFunciona');
 });
 
+Route::get('/ordenExitosa', function () {
+    return view('ordenExitosa');
+});
 
 Route::get('/formaProducto', function () {
     return view('panel.insertarProducto');
