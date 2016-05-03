@@ -1,11 +1,20 @@
 <html>
-
 <link href="../images/comida.png" rel="shortcut icon">
 <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/css/NosotrosStyle.css">
 <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="/css/HomeStyle.css">
 <link href="../images/comida.png" rel="shortcut icon">
+
+<!--
+<link href="../public/images/comida.png" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../public/css/NosotrosStyle.css">
+<link rel="stylesheet" type="text/css" href="../public/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="../public/css/HomeStyle.css"> -->
+
+
+
 <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

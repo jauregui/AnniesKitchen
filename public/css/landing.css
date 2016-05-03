@@ -14,7 +14,7 @@
 	 color:white;
 	 font-weight:500;
 	 animation-name: intro;
-     animation-duration: 5s;
+     	animation-duration: 5s;
 }
 
 .i-text{
@@ -27,7 +27,7 @@
 	color:white;
 	position:relative;
 	animation-name: intro;
-    animation-duration: 5s;
+    	animation-duration: 5s;
 }
 
 .btn-intro{
@@ -38,20 +38,20 @@
 	text-align: center;
 	color: white;
 	font-size: 20px;
-	background-color:#85CD66;
+	background-color:#D7DF01;
 	border:2px solid #9AEEAA;
 	padding: 20px; 
 	border-radius: 5px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:500;
 	animation-name: intro;
-    animation-duration: 5s;
+    	animation-duration: 5s;
 }
 
 
 
 .btn-intro:hover { 
-    background-color:#9AEEAA;
+    background-color:#FFFF00;
     border:2px solid #85CD66;
 }
 
@@ -68,7 +68,7 @@ img{
 	float: left;
 	border: solid 5px #85CD66;
 	animation-name: intro;
-    animation-duration: 5s;
+   	 animation-duration: 5s;
 }
 
 li {
@@ -91,11 +91,10 @@ li {
 
 li a:hover:not(.active) {
     color:#85CD66;
-
 }
 
 body{
-    background-image: url("../images/red-pepper.jpg");
+    background-image: url("../images/fondo.jpg");
     width: 100%;
     height: 100%;
      background-repeat: no-repeat;

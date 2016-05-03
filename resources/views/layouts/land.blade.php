@@ -3,6 +3,15 @@
 <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="/css/landing.css">
 <link href="../images/comida.png" rel="shortcut icon">
+
+<!--
+<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../public/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="../public/css/landing.css">
+<link href="../public/images/comida.png" rel="shortcut icon"> -->
+
+
+
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
