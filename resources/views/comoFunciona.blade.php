@@ -14,7 +14,7 @@
 		disponibles por cada dia de esa semana, asi como una breve descripcion de este.</div>
 </div>
 
-<div class="odd parraf-text">
+<div class="odd col-sm-12">
 	<h1 class ="parraf-titulo">Ordenar</h1>
 	<div class = "parraf-text">Para ordenar tu pedido ve a la pestaña "Menú y una vez que hayas observado la comida y sepas 
 		que vas a pedir, haz click en el boton "Haz tú pedido" ubicado en la parte intferior de la pantalla, una vez hecho 
@@ -24,9 +24,11 @@
 		platillos seleccionado, para finalizar solo haz click en "Enviar".</div>
 </div>
 
+
 <div class="even">
 	<h1 class ="parraf-titulo">Entrega</h1>
 	<div class = "parraf-text">Al finalizar tu orden, Annie se pondra en contacto contigo para confirmar los platillos que 
 		pediste y establecer un punto de entrega.</div>
+
 </div>
 @endsection
