@@ -13,6 +13,27 @@
     animation-duration: 5s;
 }
 
+.nosotros{
+	 background-image: url("../images/img_nosotros_2.jpeg");
+    width: 100%;
+    height: 350px;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     animation-name: intro;
+    animation-duration: 5s;
+}
+
+.contacto{
+	 background-image: url("../images/img_contacto.jpg");
+    width: 100%;
+    height: 350px;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     animation-name: intro;
+    animation-duration: 5s;
+}
+
+
 .i-text{
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
@@ -36,7 +57,6 @@ nav{
 
 .even{
 	background-color: white;
-	width: 100%;
     height: 250px;
     color:#744B31;
     text-align: center;
@@ -46,8 +66,7 @@ nav{
 
 .odd{
 	background-color: #744B31;
-	width: 100%;
-    height: 250px;
+    height: 300px;
     color: white;
      text-align: center;
      animation-name: intro;
@@ -71,3 +90,16 @@ img{
    	 animation-duration: 5s;
 }
 
+.form_contact{
+	padding-bottom: 60px;
+	color:black;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+label{
+	color: white;
+}
