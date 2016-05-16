@@ -10,20 +10,12 @@
           <li>Correo Electronico:anniekitchen@gmail.com</li>
           <li>Horario de atencion: 9:00am - 6:00pm</li>
         </ul>
-        <form action="contact.php" method="post">
-      <h3> Escríbenos tus mensajes, sugerencias o peticiones a "anniekitchen@gmail.com" o utiliza nuestra forma de contacto </h3>
-      Tu nombre<br>
-      <input type="text" name="cf_name"><br>
-      Tu correo<br>
-      <input type="text" name="cf_email"><br>
-      Mensaje<br>
-      <textarea name="cf_message"></textarea>
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Reset">
-      </form>
     </div>
-  </div>
 
-  
+    <div class="contact-img .col-md-4">
+       <img href="/login" src="../images/logo3.png" alt="logo" height="50" width="50">
+    </div>
+
+  </div>
 
 @endsection
