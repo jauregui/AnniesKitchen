@@ -1,0 +1,73 @@
+@keyframes intro{
+    from {opacity: 0}
+    to {opacity:1;}
+}
+
+.comoFunciona{
+    background-image: url("../images/tomato-soup.jpg");
+    width: 100%;
+    height: 350px;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     animation-name: intro;
+    animation-duration: 5s;
+}
+
+.i-text{
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 50px;
+	margin-bottom: 50px;
+	color:white;
+	position:relative;
+	animation-name: intro;
+    	animation-duration: 5s;
+    padding-top: 80px;
+}
+
+nav{
+	animation-name: intro;
+    animation-duration: 5s;
+
+}
+
+
+.even{
+	background-color: white;
+	width: 100%;
+    height: 250px;
+    color:#744B31;
+    text-align: center;
+    animation-name: intro;
+    	animation-duration: 5s;
+}
+
+.odd{
+	background-color: #744B31;
+	width: 100%;
+    height: 250px;
+    color: white;
+     text-align: center;
+     animation-name: intro;
+    	animation-duration: 5s;
+}
+
+.parraf-titulo{
+	font-weight: bolder;
+}
+
+.parraf-text{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+img{
+	display: inline-block;
+	float: left;
+	border: solid 5px #85CD66;
+	animation-name: intro;
+   	 animation-duration: 5s;
+}
+

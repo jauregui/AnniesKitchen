@@ -50,8 +50,8 @@ Route::get('/inicio', function () {
     return view('inicio');
 });
 
-Route::get('/comofunciona', function () {
-    return view('ComoFunciona');
+Route::get('/comoFunciona', function () {
+    return view('comoFunciona');
 });
 
 Route::get('/ordenExitosa', function () {
