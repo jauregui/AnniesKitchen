@@ -13,9 +13,20 @@
     animation-duration: 5s;
 }
 
+
 .fill{
   min-height: 100%;
   height: 100%;
+}
+.precios{
+    background-image: url("../images/img_precio_1.jpg");
+    width: 100%;
+    height: 350px;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     animation-name: intro;
+    animation-duration: 5s;
+>>>>>>> 51ca129c3230d03072b35f83632d450343d873c1
 }
 
 .nosotros{
