@@ -18,25 +18,25 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../public/images/tacos.png" alt="..." style="height:400px;  position:relative; left:100px;" id="imagenLunes">
+      <img src="{{ $menu['lunesimg'] }}" alt="..." style="height:400px;  position:relative; left:100px;" id="imagenLunes">
       <div class="carousel-caption">
         <center>
         <h1>LUNES</h1>
-        <h2 id="comidaLunes">Tacos de guisos</h2>
+        <h2 id="comidaLunes">{{ $menu['lunesdish'] }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionLunes">Los tacos de guisos pueden ser servidos en harina o ma&iacute;z, contamos con guisos como: deshebrada, chicharr&oacute;n, picadillo</p>
+    <p style="width:350px;" id="descripcionLunes">{{ $menu['lunesdesc'] }}</p>
       </center>
       </div>
     </div>
     <!--Separador -->
     <div class="item">
-      <img src="../public/images/burguer.png" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMartes">
+      <img src="{{ $menu['martesimg'] }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMartes">
       <div class="carousel-caption">
        <center>
         <h1 >MARTES</h1>
-        <h2 id="comidaMartes">Hamburguersa Cl&aacute;sica</h2>
+        <h2 id="comidaMartes">{{ $menu['martesdish'] }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionMartes">La hamburguesa cl&aacute;sica incluye carne, dos quesos, jam&oacute;n, tomate, lechuga</p>
+    <p style="width:350px;" id="descripcionMartes">{{ $menu['martesdesc'] }}</p>
       </center>
         ...
       </div>
@@ -44,30 +44,28 @@
     ...
     <!--Separador -->
     <div class="item">
-      <img src="../public/images/platilloMuestra.png" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMiercoles">
+      <img src="{{ $menu['miercolesimg'] }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMiercoles">
       <div class="carousel-caption">
        <center>
         <h1 >MIERCOLES</h1>
-        <h2 id="comidaMiercoles">Mole Cl&aacute;sico</h2>
+        <h2 id="comidaMiercoles">{{ $menu['miercolesdish'] }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionMiercoles">La hamburguesa cl&aacute;sica incluye carne, dos quesos, jam&oacute;n, tomate, lechuga</p>
+    <p style="width:350px;" id="descripcionMiercoles">{{ $menu['miercolesdesc'] }}</p>
       </center>
       </div>
     </div>
-
 <!--Separador -->
     <div class="item">
-      <img src="../public/images/platilloMuestra.png" alt="..." style="height:400px; position:relative; left:100px;" id="imagenJueves">
+      <img src="{{ $menu['juevesimg'] }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenJueves">
       <div class="carousel-caption">
        <center>
         <h1 >JUEVES</h1>
-        <h2 id="comidaJueves">Mole Cl&aacute;sico</h2>
+        <h2 id="comidaJueves">{{ $menu['juevesdish'] }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionJueves">La hamburguesa cl&aacute;sica incluye carne, dos quesos, jam&oacute;n, tomate, lechuga</p>
+    <p style="width:350px;" id="descripcionJueves">{{ $menu['juevesdesc'] }}</p>
       </center>
       </div>
     </div>
-
   </div>
 
   <!-- Controls -->

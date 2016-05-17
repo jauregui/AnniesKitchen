@@ -1,5 +1,5 @@
 <ul class="nav navbar-nav">
-	<li><a href="/crearMenu">Crear Men&uacute;</a></li>
+	<li><a href="/crearMenu">Crear/Editar Men&uacute;</a></li>
 </ul>
 <ul class="nav navbar-nav">
 	<li><a href="/formaProducto">Insertar nuevos platillos</a></li>

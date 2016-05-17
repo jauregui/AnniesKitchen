@@ -52,7 +52,7 @@ class HomeController extends Controller
         'description' => $request->input('descripcionProducto'),
         'imgurl' => $request->input('imgUrl')
         ]);
-        return view('panel.insercionExitosa');
+        return view('panel.insercionExitosa', ['mensaje' => 'El producto fue insertado con éxito']);
     }
 
     public function mostrarPedidos()
@@ -63,13 +63,26 @@ class HomeController extends Controller
 
     public function insertarMenu(Request $request)
     {
-        $semana = DB::insert('insert into menu (semanaNum, comidaLunes, comidaMartes, comidaMiercoles, comidaJueves) values (:semanaNum, :comidaLunes, :comidaMartes, :comidaMiercoles, :comidaJueves)',
-            ['semanaNum' => $request->input('semanaNum'),
-            'comidaLunes' => $request->input('comidaLunes'),
-            'comidaMartes' => $request->input('comidaMartes'),
-            'comidaMiercoles' => $request->input('comidaMiercoles'),
-            'comidaJueves' => $request->input('comidaJueves')]);
-        return view('panel.inicio');
+
+        $existe = DB::select('select semanaNum from menu where semanaNum = :semanaNum;', ['semanaNum' => $request->input('semanaNum')]);
+        if(empty($existe)){
+            $semana = DB::insert('insert into menu (semanaNum, comidaLunes, comidaMartes, comidaMiercoles, comidaJueves) values (:semanaNum, :comidaLunes, :comidaMartes, :comidaMiercoles, :comidaJueves)',
+                ['semanaNum' => $request->input('semanaNum'),
+                'comidaLunes' => $request->input('comidaLunes'),
+                'comidaMartes' => $request->input('comidaMartes'),
+                'comidaMiercoles' => $request->input('comidaMiercoles'),
+                'comidaJueves' => $request->input('comidaJueves')]);
+            return view('panel.insercionExitosa', ['mensaje' => 'El menú fue insertado con éxito']);
+        }
+        else {
+            $semana = DB::update('update menu set  comidaLunes=:comidaLunes, comidaMartes=:comidaMartes, comidaMiercoles=:comidaMiercoles, comidaJueves=:comidaJueves where semanaNum=:semanaNum',
+                ['semanaNum' => $request->input('semanaNum'),
+                'comidaLunes' => $request->input('comidaLunes'),
+                'comidaMartes' => $request->input('comidaMartes'),
+                'comidaMiercoles' => $request->input('comidaMiercoles'),
+                'comidaJueves' => $request->input('comidaJueves')]);
+            return view('panel.insercionExitosa', ['mensaje' => 'El menú fue editado con éxito']);
+        }
     }
 
     public function crearMenu(Request $request)
@@ -81,6 +94,29 @@ class HomeController extends Controller
     public function mostrarMenu(Request $request)
     {
       $numSemana = ($request->input('semana'));
-
+      if(empty($numSemana)){
+        $numSemana = 1;
+      }else{
+      $menu = DB::select('select semanaNum as semana, 
+            lunes.dish as lunesdish,
+            lunes.description as lunesdesc,
+            lunes.imgurl as lunesimg,
+             martes.dish as martesdish,
+             martes.description as martesdesc,
+             martes.imgurl as martesimg,
+             miercoles.dish as miercolesdish,
+             miercoles.description as miercolesdesc,
+             miercoles.imgurl as miercolesimg,
+             jueves.dish as juevesdish,
+             jueves.description as juevesdesc,
+             jueves.imgurl as juevesimg,
+            from menu 
+            left join producto as lunes on lunes.idP=menu.comidaLunes
+            left join producto as martes on martes.idP=menu.comidaMartes
+            left join producto as miercoles on miercoles.idP=menu.comidaMiercoles
+            left join producto as jueves on jueves.idP=menu.comidaJueves
+            where semanaNum=:numSemana', ['numSemana' => $numSemana]);
+            return('inicio',['menu' => $menu]);
+        }
     }
 }
