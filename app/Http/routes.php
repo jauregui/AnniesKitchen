@@ -30,7 +30,7 @@ Route::get('/panel', ['middleware' => 'auth', function () {
     return view('panel.inicio');
 }]);
 
-Route::get('/historialPedidos', ['middleware' => 'auth', 'uses' => 'HomeController@mostrarPedidos' ]);
+Route::any('/historialPedidos', ['middleware' => 'auth', 'uses' => 'HomeController@mostrarPedidos' ]);
 
 Route::get('/productoInsertados', ['middleware' => 'auth', 'uses' => 'HomeController@mostrarProductos' ]);
 

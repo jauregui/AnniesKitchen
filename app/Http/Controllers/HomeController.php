@@ -30,8 +30,9 @@ class HomeController extends Controller
 
     public function guardarPedido(Request $request)
     {
+        $semanaNum = ($request->input('semana'));
         $total = ($request->input('qLu',0) + $request->input('qMa',0) + $request->input('qMi',0) + $request->input('qJu',0))*50;
-        $pedido = DB::insert('insert into order_ticket (nombre, apellido, telefono, comentario, qLu, qMa, qMi, qJu, total) values (:nombre, :apellido, :telefono, :comentario, :qLu, :qMa, :qMi, :qJu, :total)',
+        $pedido = DB::insert('insert into order_ticket (nombre, apellido, telefono, comentario, qLu, qMa, qMi, qJu, total, semanaNum) values (:nombre, :apellido, :telefono, :comentario, :qLu, :qMa, :qMi, :qJu, :total, :semanaNum)',
             ['nombre' => $request->input('nombre'),
             'apellido' => $request->input('apellido'),
             'telefono' => $request->input('telefono'),
@@ -40,7 +41,8 @@ class HomeController extends Controller
             'qMa' =>$request->input('qMa', NULL),
             'qMi' =>$request->input('qMi', NULL),
             'qJu' =>$request->input('qJu', NULL),
-            'total' => $total
+            'total' => $total,
+            'semanaNum' => $semanaNum
             ]);
         return view('ordenExitosa');
     }
@@ -55,10 +57,22 @@ class HomeController extends Controller
         return view('panel.insercionExitosa', ['mensaje' => 'El producto fue insertado con éxito']);
     }
 
-    public function mostrarPedidos()
+    public function mostrarPedidos(Request $request)
     {
-        $ordenes = DB::select('select * from order_ticket');
-        return view ('panel.historialOrdenes', ['ordenes' => $ordenes]);
+        $semanaNum = ($request->input('semana'));
+
+        $select = array();
+        for($i = 1; $i <=52; $i++)
+        {
+            $select[$i]['id'] = $i;
+            if ($i == $semanaNum) {
+                $select[$i]['selected'] = 'selected';
+            }
+        }
+        if(empty($semanaNum))
+            $semanaNum = 1;
+        $ordenes = DB::select('select * from order_ticket where semanaNum=:semanaNum', ['semanaNum' => $semanaNum]);
+        return view ('panel.historialOrdenes', ['ordenes' => $ordenes, 'select' => $select]);
     }
 
     public function insertarMenu(Request $request)
