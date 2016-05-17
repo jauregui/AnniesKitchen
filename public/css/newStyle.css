@@ -121,3 +121,15 @@ ul
 label{
 	color: white;
 }
+
+.table{
+    border: 1px solid black !important;
+    table-layout: fixed !important;
+    width: 200px;
+}
+
+.th .td {
+    border: 1px solid black !important;
+    overflow: hidden !important;
+    width: 100px !important;
+}

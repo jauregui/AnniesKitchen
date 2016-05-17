@@ -8,6 +8,7 @@
                 <div class="panel-heading">Historial de pedidos</div>
                    <div class="panel-body">
                         <table class="table table-condensed">
+                          <tr>
                             <th>
                                 Nombre
                             </th>
@@ -35,34 +36,39 @@
                             <th>
                                 Total Pedido
                             </th>
+                          </tr>
+                          </table>
                             @foreach ($ordenes as $orden)
-                            <th>
-                                  {{$orden->nombre}}
-                            </th>
-                            <th>
-                                {{$orden->apellido}}
-                            </th>
-                            <th>
-                                {{$orden->telefono}}
-                            </th>
-                            <th>
-                                {{$orden->comentario}}
-                            </th>
-                            <th>
-                                {{$orden->qLu}}
-                            </th>
-                            <th>
-                                {{$orden->qMa}}
-                            </th>
-                            <th>
-                                {{$orden->qMi}}
-                            </th>
-                            <th>
-                                {{$orden->qJu}}
-                            </th>
-                            <th>
-                                {{$orden->total}}
-                            </th>
+                            <table class="table table-condensed " style="text-align: left;">
+                              <tr>
+                              <td>
+                                    {{$orden->nombre}}
+                              </td>
+                              <td>
+                                  {{$orden->apellido}}
+                              </td>
+                              <td>
+                                  {{$orden->telefono}}
+                              </td>
+                              <td>
+                                  {{$orden->comentario}}
+                              </td>
+                              <td>
+                                  {{$orden->qLu}}
+                              </td>
+                              <td>
+                                  {{$orden->qMa}}
+                              </td>
+                              <td>
+                                  {{$orden->qMi}}
+                              </td>
+                              <td>
+                                  {{$orden->qJu}}
+                              </td>
+                              <td>
+                                  {{$orden->total}}
+                              </td>
+                            </tr>
                           </table>
                             @endforeach
                         </div>

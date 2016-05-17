@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
     <!--<link href="/css/loginStyle.css" rel="stylesheet" >-->
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
@@ -39,17 +39,17 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                
+
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="../images/logo3.png" alt="logo" height="40px" width="40px"> 
+                    <img src="../images/logo3.png" alt="logo" height="40px" width="40px">
                 </a>
                 <!-- Left Side Of Navbar -->
                 @if (Auth::guest())
-                
+
                 @else
                 @include('partials.menupanel')
                 @endif

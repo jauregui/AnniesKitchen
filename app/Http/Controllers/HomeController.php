@@ -80,6 +80,6 @@ class HomeController extends Controller
 
     public function mostrarMenu(Request $request)
     {
-      $menuSemana = DB::select('select * from ')
+      
     }
 }
