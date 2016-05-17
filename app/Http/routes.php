@@ -38,9 +38,7 @@ Route::get('/crearMenu', ['middleware' => 'auth', 'uses' => 'HomeController@crea
 
 Route::post('/insertarMenu', ['middleware' => 'auth', 'uses' => 'HomeController@insertarMenu']);
 
-Route::get('/menu', function () {
-    return view('inicio');
-});
+Route::get('/menu', [ 'uses' => 'HomeController@mostrarMenu']);
 
 Route::get('/contacto', function () {
     return view('Contacto');

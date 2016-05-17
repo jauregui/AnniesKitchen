@@ -8,10 +8,10 @@
 
 
 <link href="../public/images/comida.png" rel="shortcut icon">
-<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../public/css/NosotrosStyle.css">
-<link rel="stylesheet" type="text/css" href="../public/css/bootstrap-theme.css">
-<link rel="stylesheet" type="text/css" href="../public/css/HomeStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/NosotrosStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="../css/HomeStyle.css">
 
 
 

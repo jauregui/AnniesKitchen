@@ -96,7 +96,7 @@ class HomeController extends Controller
       $numSemana = ($request->input('semana'));
       if(empty($numSemana)){
         $numSemana = 1;
-      }else{
+      }
       $menu = DB::select('select semanaNum as semana, 
             lunes.dish as lunesdish,
             lunes.description as lunesdesc,
@@ -109,14 +109,14 @@ class HomeController extends Controller
              miercoles.imgurl as miercolesimg,
              jueves.dish as juevesdish,
              jueves.description as juevesdesc,
-             jueves.imgurl as juevesimg,
+             jueves.imgurl as juevesimg
             from menu 
             left join producto as lunes on lunes.idP=menu.comidaLunes
             left join producto as martes on martes.idP=menu.comidaMartes
             left join producto as miercoles on miercoles.idP=menu.comidaMiercoles
             left join producto as jueves on jueves.idP=menu.comidaJueves
             where semanaNum=:numSemana', ['numSemana' => $numSemana]);
-            return('inicio',['menu' => $menu]);
-        }
+
+            return view('inicio',['menu' => $menu]);
     }
 }

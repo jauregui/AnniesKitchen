@@ -18,25 +18,25 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="{{ $menu['lunesimg'] }}" alt="..." style="height:400px;  position:relative; left:100px;" id="imagenLunes">
+      <img src="{{ $menu[0]->lunesimg or null }}" alt="..." style="height:400px;  position:relative; left:100px;" id="imagenLunes">
       <div class="carousel-caption">
         <center>
         <h1>LUNES</h1>
-        <h2 id="comidaLunes">{{ $menu['lunesdish'] }}</h2>
+        <h2 id="comidaLunes">{{ $menu[0]->lunesdish or null }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionLunes">{{ $menu['lunesdesc'] }}</p>
+    <p style="width:350px;" id="descripcionLunes">{{ $menu[0]->lunesdesc or null }}</p>
       </center>
       </div>
     </div>
     <!--Separador -->
     <div class="item">
-      <img src="{{ $menu['martesimg'] }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMartes">
+      <img src="{{ $menu[0]->martesimg or null }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMartes">
       <div class="carousel-caption">
        <center>
         <h1 >MARTES</h1>
-        <h2 id="comidaMartes">{{ $menu['martesdish'] }}</h2>
+        <h2 id="comidaMartes">{{ $menu[0]->martesdish or null }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionMartes">{{ $menu['martesdesc'] }}</p>
+    <p style="width:350px;" id="descripcionMartes">{{ $menu[0]->martesdesc or null }}</p>
       </center>
         ...
       </div>
@@ -44,25 +44,25 @@
     ...
     <!--Separador -->
     <div class="item">
-      <img src="{{ $menu['miercolesimg'] }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMiercoles">
+      <img src="{{ $menu[0]->miercolesimg or null }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenMiercoles">
       <div class="carousel-caption">
        <center>
         <h1 >MIERCOLES</h1>
-        <h2 id="comidaMiercoles">{{ $menu['miercolesdish'] }}</h2>
+        <h2 id="comidaMiercoles">{{ $menu[0]->miercolesdish or null }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionMiercoles">{{ $menu['miercolesdesc'] }}</p>
+    <p style="width:350px;" id="descripcionMiercoles">{{ $menu[0]->miercolesdesc or null }}</p>
       </center>
       </div>
     </div>
 <!--Separador -->
     <div class="item">
-      <img src="{{ $menu['juevesimg'] }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenJueves">
+      <img src="{{ $menu[0]->juevesimg or null }}" alt="..." style="height:400px; position:relative; left:100px;" id="imagenJueves">
       <div class="carousel-caption">
        <center>
         <h1 >JUEVES</h1>
-        <h2 id="comidaJueves">{{ $menu['juevesdish'] }}</h2>
+        <h2 id="comidaJueves">{{ $menu[0]->juevesdish or null }}</h2>
         <h3>$50</h3>
-    <p style="width:350px;" id="descripcionJueves">{{ $menu['juevesdesc'] }}</p>
+    <p style="width:350px;" id="descripcionJueves">{{ $menu[0]->juevesdesc or null }}</p>
       </center>
       </div>
     </div>
