@@ -54,6 +54,10 @@ Route::get('/comoFunciona', function () {
     return view('comoFunciona');
 });
 
+Route::get('/precios', function () {
+    return view('precios');
+});
+
 Route::get('/ordenExitosa', function () {
     return view('ordenExitosa');
 });

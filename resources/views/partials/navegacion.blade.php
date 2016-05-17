@@ -9,6 +9,7 @@
       <li><a href="/menu">Men&uacute;</a></li>
       <li><a href="/comoFunciona">&iquest;C&oacute;mo funciona?</a></li>
       <li><a href="/contacto">Contacto</a></li>
+      <li><a href="/precios">Precios</a></li>
     </ul>
   </div>
 </nav>
