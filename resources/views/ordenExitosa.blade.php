@@ -66,8 +66,8 @@ body {
 
 #wrapper:hover p:nth-child(1) {
   font-size: 7em;
-  text-shadow: #fff 0 0 10px, 
-    #fff 0 4px 3px, #ddd 0 9px 3px,  #ccc 0 12px 1px, 
+  text-shadow: #fff 0 0 10px,
+    #fff 0 4px 3px, #ddd 0 9px 3px,  #ccc 0 12px 1px,
     rgba(0,0,0,0.2) 0 14px 5px, rgba(0,0,0,0.1) 0 20px 10px,
     rgba(0,0,100,0.2) 0 15px 80px;
   text-indent: 0.3em;
@@ -75,8 +75,8 @@ body {
 
 #wrapper:hover p:nth-child(2) {
   font-size: 8em;
-  text-shadow: #fff 0 0 1px, 
-    #eee 0 4px 3px, #ddd 0 9px 3px,  #ccc 0 12px 1px, 
+  text-shadow: #fff 0 0 1px,
+    #eee 0 4px 3px, #ddd 0 9px 3px,  #ccc 0 12px 1px,
     rgba(0,0,0,0.2) 0 14px 3px, rgba(0,0,0,0.1) 0 20px 10px,
     rgba(0,0,100,0.2) 0 15px 80px;
 }
@@ -84,7 +84,7 @@ body {
 #wrapper:hover p:nth-child(3) {
   font-size: 9em;
   text-shadow: #fff 0 0 2px, 
-    #fff 0 4px 5px, #ddd 0 9px 5px,  #ccc 0 12px 10px, 
+    #fff 0 4px 5px, #ddd 0 9px 5px,  #ccc 0 12px 10px,
     rgba(0,0,0,0.2) 0 14px 5px, rgba(0,0,0,0.1) 0 20px 10px,
     rgba(0,0,100,0.2) 0 15px 80px;
 }
@@ -93,8 +93,8 @@ body {
 /* Middle ------------------------------------------------------ */
 
 #wrapper p:nth-child(2):hover {
-  text-shadow: #fff 0 -5px 1px, 
-    #eee 0 -1px 3px, #ddd 0 4px 3px,  #ccc 0 7px 1px, 
+  text-shadow: #fff 0 -5px 1px,
+    #eee 0 -1px 3px, #ddd 0 4px 3px,  #ccc 0 7px 1px,
     rgba(0,0,0,0.2) 0 15px 5px, rgba(0,0,0,0.1) 0 20px 10px,
     rgba(0,0,0,0.2) 0 15px 80px;
 }
