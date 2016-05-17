@@ -31,7 +31,7 @@ class HomeController extends Controller
     public function guardarPedido(Request $request)
     {
         $total = ($request->input('qLu',0) + $request->input('qMa',0) + $request->input('qMi',0) + $request->input('qJu',0))*45;
-        $pedido = DB::insert('insert into order_ticket (nombre, apellido, telefono, comentario, qLu, qMa, qMi, qJu, total) values (:nombre, :apellido, :telefono, :comentario, :qLu, :qMa, :qMi, :qJu, :total)', 
+        $pedido = DB::insert('insert into order_ticket (nombre, apellido, telefono, comentario, qLu, qMa, qMi, qJu, total) values (:nombre, :apellido, :telefono, :comentario, :qLu, :qMa, :qMi, :qJu, :total)',
             ['nombre' => $request->input('nombre'),
             'apellido' => $request->input('apellido'),
             'telefono' => $request->input('telefono'),
@@ -46,7 +46,7 @@ class HomeController extends Controller
     }
 
     public function insertarProducto(Request $request)
-    {   
+    {
         $producto = DB::insert('insert into producto (dish, description, imgurl) values (:dish, :description, :imgurl)',
         ['dish' => $request->input('nombreProducto'),
         'description' => $request->input('descripcionProducto'),
@@ -61,8 +61,8 @@ class HomeController extends Controller
         return view ('panel.historialOrdenes', ['ordenes' => $ordenes]);
     }
 
-    public function insertarMenu(Request $request) 
-    {   
+    public function insertarMenu(Request $request)
+    {
         $semana = DB::insert('insert into menu (semanaNum, comidaLunes, comidaMartes, comidaMiercoles, comidaJueves) values (:semanaNum, :comidaLunes, :comidaMartes, :comidaMiercoles, :comidaJueves)',
             ['semanaNum' => $request->input('semanaNum'),
             'comidaLunes' => $request->input('comidaLunes'),
@@ -70,11 +70,16 @@ class HomeController extends Controller
             'comidaMiercoles' => $request->input('comidaMiercoles'),
             'comidaJueves' => $request->input('comidaJueves')]);
         return view('panel.inicio');
-    } 
+    }
 
-    public function crearMenu(Request $request) 
+    public function crearMenu(Request $request)
     {
         $productos = DB::select('select * from producto');
         return view('panel.crearMenu', ['productos' => $productos]);
+    }
+
+    public function mostrarMenu(Request $request)
+    {
+      $menuSemana = DB::select('select * from ')
     }
 }

@@ -6,67 +6,64 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">Historial de pedidos</div>
-                   <div class="panel-body">             
-                        <div class="table">
-                            <div class="row header">
-                              <div class="cell">
+                   <div class="panel-body">
+                        <table class="table table-condensed">
+                            <th>
                                 Nombre
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Apellido
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Telefono
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Comentario
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Cant. Lunes
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Cant. Martes
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Cant. Miercoles
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Cant. Jueves
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 Total Pedido
-                              </div>
-                            </div>
+                            </th>
                             @foreach ($ordenes as $orden)
-                            <div class="row">
-                              <div class="cell">
-                                {{$orden->nombre}}
-                              </div>
-                              <div class="cell">
+                            <th>
+                                  {{$orden->nombre}}
+                            </th>
+                            <th>
                                 {{$orden->apellido}}
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 {{$orden->telefono}}
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 {{$orden->comentario}}
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 {{$orden->qLu}}
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 {{$orden->qMa}}
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 {{$orden->qMi}}
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 {{$orden->qJu}}
-                              </div>
-                              <div class="cell">
+                            </th>
+                            <th>
                                 {{$orden->total}}
-                              </div>
-                            </div>
+                            </th>
+                          </table>
                             @endforeach
                         </div>
                 </div>
