@@ -22,10 +22,11 @@
 <div class="odd col-sm-12">
 	<h1 class ="parraf-titulo">Visión</h1>
 	<div class = "parraf-text">
-		Ofrecer un servicio como un negocio líder en la elaboración de comida casera,
-		mediante la cual, se pretende crecer y ofrecer nuestros servicios a la mayor
-		cantidad de alumnos de las escuelas circundates con el fin de buscar combatir
-		la obesidad en México por medio de una comida sana y fresca.
+		Nuestra visión para el año 2018 es ofrecer un servicio como un negocio líder
+		en la elaboración de comida casera, mediante la cual, se pretende crecer y
+		ofrecer nuestros servicios a la mayor cantidad de alumnos de las escuelas
+		circundates con el fin de buscar combatir la obesidad en México por medio de
+		una comida sana y fresca.
 	</div>
 </div>
 @endsection
