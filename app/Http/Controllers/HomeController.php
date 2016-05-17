@@ -80,7 +80,7 @@ class HomeController extends Controller
 
     public function mostrarMenu(Request $request)
     {
-      $numSemana = (request->input('semana'));
+      $numSemana = ($request->input('semana'));
 
     }
 }
