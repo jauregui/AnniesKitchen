@@ -1,7 +1,9 @@
 <html>
-<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../public/css/bootstrap-theme.css">
-<link rel="stylesheet" type="text/css" href="../public/css/newStyle.css">
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="../css/newStyle.css">
+
 
 
 
