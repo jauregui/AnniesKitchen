@@ -37,7 +37,6 @@ $( document ).on('ready', function() {
 //function cambioSemana() {
   $("#semana").on("change", function(){
 
-
               for (var i=0; i<2; i++){
                 var jsonObject = {
                     "numero": $("#semana").val(),
