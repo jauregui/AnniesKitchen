@@ -1,6 +1,6 @@
 @extends('layouts.inicio')
 @section('content')
-<img  id="canasta" src="../images/bolsaComida.png" title="Pedido"></img>
+
 <link href="../images/comida.png" rel="shortcut icon">
 
 <center>
@@ -112,6 +112,8 @@
   $("#myWeek").on("change", function(){
     //var semana contiene el numero de semana
     var semana=document.getElementById("myWeek").value[6]+document.getElementById("myWeek").value[7];
+    var semana = parseInt(semana);
+
 
     //el nombre de las comidas
     var comLunes="Nueva Comida Lunes"

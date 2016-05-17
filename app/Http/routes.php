@@ -26,7 +26,7 @@ Route::get('/nosotros', function () {
 
 
 Route::get('/panel', ['middleware' => 'auth', function () {
-    
+
     return view('panel.inicio');
 }]);
 
@@ -39,7 +39,7 @@ Route::get('/crearMenu', ['middleware' => 'auth', 'uses' => 'HomeController@crea
 Route::post('/insertarMenu', ['middleware' => 'auth', 'uses' => 'HomeController@insertarMenu']);
 
 Route::get('/menu', function () {
-    return view('Menu');
+    return view('inicio');
 });
 
 Route::get('/contacto', function () {
@@ -69,9 +69,3 @@ Route::get('/formaProducto', function () {
 Route::any('/guardarPedido', 'HomeController@guardarPedido');
 
 Route::any('/insertarProducto', 'HomeController@insertarProducto');
-
-
-
-
-
-
