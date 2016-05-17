@@ -30,7 +30,7 @@
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Reset">
-      </form>     
+      </form>
   </div>
 </div>
 

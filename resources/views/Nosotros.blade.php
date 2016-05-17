@@ -10,13 +10,22 @@
 
 <div class="even col-sm-12">
 	<h1 class ="parraf-titulo">Misión</h1>
-	<div class = "parraf-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<div class = "parraf-text">
+		Ofrecer alimentos que cumplan con altos estándares de calidad y frescura
+		que satisfagan las necesidades nutricionales de nuestros clientes. Ofrecer
+		alimentos que tengan una excelente relación costo-beneficio.
+		Contar con un servicio orientado a satisfacer al cliente, con un trato cordial
+		y orientado a resolver las dudas y comentarios que se puedan presentar.
+	 </div>
 </div>
 
 <div class="odd col-sm-12">
 	<h1 class ="parraf-titulo">Visión</h1>
-	<div class = "parraf-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<div class = "parraf-text">
+		Ofrecer un servicio como un negocio líder en la elaboración de comida casera,
+		mediante la cual, se pretende crecer y ofrecer nuestros servicios a la mayor
+		cantidad de alumnos de las escuelas circundates con el fin de buscar combatir
+		la obesidad en México por medio de una comida sana y fresca.
+	</div>
 </div>
-
-
 @endsection
