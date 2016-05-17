@@ -1,8 +1,8 @@
 <html>
-<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css">
-<link rel="stylesheet" type="text/css" href="/css/landing.css">
-<link href="../images/comida.png" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="../css/landing.css">
+<link href="../public/images/comida.png" rel="shortcut icon">
 
 <!--
 <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
