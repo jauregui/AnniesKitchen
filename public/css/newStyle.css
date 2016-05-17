@@ -46,6 +46,7 @@
 	animation-name: intro;
     	animation-duration: 5s;
     padding-top: 80px;
+    text-shadow: 2px 2px #CCCCCC;
 }
 
 nav{
