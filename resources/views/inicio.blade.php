@@ -2,10 +2,13 @@
 @section('content')
 
 <link href="../images/comida.png" rel="shortcut icon">
-
+<form action="/menu" method="POST">
 <center>
-  Selecciona la semana que deseas visualizar: <input type="week" id="myWeek" onchange="cambiaSemana()">
+  Selecciona la semana que deseas visualizar: <input type="week" id="myWeek" onchange="cambiaSemana()"><button>Enviar</button>
+  <input type="hidden" id="semanaNum" name="semanaNum" value="">
+  <input type="hidden" name="_token" value="{{ csrf_token() }}">
 </center>
+</form>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -111,7 +114,7 @@
     //var semana contiene el numero de semana
     var semana=document.getElementById("myWeek").value[6]+document.getElementById("myWeek").value[7];
     var semana = parseInt(semana);
-
+    $('#semanaNum').val(semana);
 
     //el nombre de las comidas
     var comLunes="Nueva Comida Lunes"

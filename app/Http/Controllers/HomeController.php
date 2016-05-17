@@ -12,12 +12,12 @@ class HomeController extends Controller
      * Create a new controller instance.
      *
      * @return void
-     */
+     *
     public function __construct()
     {
         $this->middleware('auth');
     }
-
+    */
     /**
      * Show the application dashboard.
      *
@@ -30,7 +30,7 @@ class HomeController extends Controller
 
     public function guardarPedido(Request $request)
     {
-        $semanaNum = ($request->input('semana'));
+        $semanaNum = ($request->input('semanaNum'));
         $total = ($request->input('qLu',0) + $request->input('qMa',0) + $request->input('qMi',0) + $request->input('qJu',0))*50;
         $pedido = DB::insert('insert into order_ticket (nombre, apellido, telefono, comentario, qLu, qMa, qMi, qJu, total, semanaNum) values (:nombre, :apellido, :telefono, :comentario, :qLu, :qMa, :qMi, :qJu, :total, :semanaNum)',
             ['nombre' => $request->input('nombre'),
