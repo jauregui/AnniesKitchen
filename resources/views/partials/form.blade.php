@@ -2,6 +2,7 @@
 
   <form method="POST" action="{{action('HomeController@guardarPedido') }}" >
   <input type="hidden" name="_token" value="{{ csrf_token() }}">
+  <input type="hidden" id="semanaNumForm" name="semanaNum" value="{{ $semanaNum or null}}">
     <div class="form-group row">
 
 

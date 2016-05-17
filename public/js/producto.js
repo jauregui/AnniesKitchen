@@ -7,7 +7,7 @@ $(document).ready(function(){
 		total += parseInt($('#qMa').val());
 		total += parseInt($('#qMi').val());
 		total += parseInt($('#qJu').val());
-		total *= 45;
+		total *= 50;
 
 		$("#total").val(total);
 	});

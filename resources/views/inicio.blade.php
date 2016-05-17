@@ -115,6 +115,7 @@
     var semana=document.getElementById("myWeek").value[6]+document.getElementById("myWeek").value[7];
     var semana = parseInt(semana);
     $('#semanaNum').val(semana);
+    $('#semanaNumForm').val(semana);
 
     //el nombre de las comidas
     var comLunes="Nueva Comida Lunes"

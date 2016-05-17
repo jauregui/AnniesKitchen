@@ -107,7 +107,7 @@ class HomeController extends Controller
 
     public function mostrarMenu(Request $request)
     {
-      $numSemana = ($request->input('semana'));
+      $numSemana = ($request->input('semanaNum'));
       if(empty($numSemana)){
         $numSemana = 1;
       }
@@ -131,6 +131,6 @@ class HomeController extends Controller
             left join producto as jueves on jueves.idP=menu.comidaJueves
             where semanaNum=:numSemana', ['numSemana' => $numSemana]);
 
-            return view('inicio',['menu' => $menu]);
+            return view('inicio',['menu' => $menu, 'semanaNum' => $numSemana]);
     }
 }
